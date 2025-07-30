@@ -152,10 +152,9 @@ const TestimonialsSection = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="">
-        <Row className="mx-0">
-          <Col xl={12}>
-            <div className="custom-slider-wrapper">
+      <Container className="custom-border no-margin-right">
+        
+           
               <Slider {...sliderSettings} ref={sliderRef}>
                 {/* Slide 1 */}
                 <div>
@@ -339,9 +338,8 @@ const TestimonialsSection = () => {
                   </Row>
                 </div>
               </Slider>
-            </div>
-          </Col>
-        </Row>
+           
+         
       </Container>
       <Container>
         <Row className="text-center">

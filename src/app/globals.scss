@@ -1553,6 +1553,7 @@ ul.slick-dots li {
 section.testimonials-area {
     position: relative;
     z-index: 1;
+     
 
 }
 
@@ -1575,10 +1576,6 @@ section.testimonials-area {
 }
 
 
-.custom-slider {
- 
-  margin-right: 0 !important;  
-}
 
 .single-testimonial-item {
   background: url('../../public/images/testimonial-bg.png') no-repeat center
@@ -1588,6 +1585,7 @@ section.testimonials-area {
   color: #fff;
   height: 420px;
   width: 485px !important;
+  
 }
 .single-testimonial-item3 {
   background: url('../../public/images/testimonial-bg.png') no-repeat center
@@ -1603,9 +1601,9 @@ section.testimonials-area {
 
 
 .no-margin-right {
-
-  margin-right: 0 !important;
+  padding: 0 !important;
 }
+
 
 
 .single-testimonial-item .quote-image {
