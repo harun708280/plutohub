@@ -297,16 +297,16 @@ const TestimonialsSection = () => {
               </Col>
               <Col xl={5}>
                 <div
-                  className="position-relative p-4 mt-4 text-white rounded d-flex justify-content-center align-items-center"
+                  className="position-relative p-4  text-white rounded d-flex justify-content-center align-items-center"
                   style={{
                     backgroundImage: "url(/testi2.png)",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
-                    minHeight: "300px",
+                    minHeight: "365px",
                     height: "100%",
                     width: "100%",
                     maxWidth: "300px",
-                    clipPath: "polygon(100% 0, 100% 83%, 83% 100%, 0 100%, 0 0)",
+                    clipPath: "polygon(100% 0, 100% 83%, 82% 100%, 0 100%, 0 0)",
                   }}
                 >
                   <div
