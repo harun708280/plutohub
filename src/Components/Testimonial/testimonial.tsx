@@ -157,7 +157,7 @@ const TestimonialsSection = () => {
           {/* Slide 1 */}
           <div>
             <div
-              className="single-testimonial-item p-4 text-white rounded"
+              className="single-testimonial-item p-4 text-white rounded position-relative"
               style={{
                 backgroundImage: "url(/images/testimonial-bg.png)",
                 backgroundSize: "100% 100%",
@@ -177,17 +177,24 @@ const TestimonialsSection = () => {
                 the limitations of mobile and web app development, avoiding
                 overly flashy designs that complicate front-end coding.”
               </p>
-              <div className="author-meta d-flex align-items-center gap-3 mt-4">
+              <div
+                className="author-meta position-absolute"
+                style={{
+                  bottom: "24px",
+                  left: "24px",
+                  right: "24px",
+                }}
+              >
                 <Image
                   src="/images/author-avatar.svg"
                   width={50}
                   height={50}
-                  alt="Khaled Belkadi"
-                  className="rounded-circle"
+                  alt="Sarah Johnson"
+                  className="rounded-circle author-avatar"
                 />
                 <div className="author-info">
-                  <h4 className="mb-0">Khaled Belkadi</h4>
-                  <p className="mb-0">Project Manager</p>
+                  <h4 className="mb-0">Sarah Johnson</h4>
+                  <p className="mb-0">Product Owner</p>
                 </div>
               </div>
             </div>
@@ -264,8 +271,8 @@ const TestimonialsSection = () => {
             }}
           >
             <Row>
-              <Col xl={7}>
-                <div className=''>
+              <Col xl={7} className='position-relative'>
+                <div >
                   <Image
                     src="/images/quote-left.svg"
                     width={35}
@@ -280,19 +287,26 @@ const TestimonialsSection = () => {
                     development, avoiding overly flashy designs that complicate
                     front-end coding.”
                   </p>
-                  <div className="author-meta ">
-                    <Image
-                      src="/images/author-avatar.svg"
-                      width={50}
-                      height={50}
-                      alt="Sarah Johnson"
-                      className="rounded-circle"
-                    />
-                    <div className="author-info">
-                      <h4 className="mb-0">Sarah Johnson</h4>
-                      <p className="mb-0">Product Owner</p>
-                    </div>
-                  </div>
+                  <div
+                className="author-meta position-absolute"
+                style={{
+                  bottom: "2px",
+                  left: "24px",
+                  right: "24px",
+                }}
+              >
+                <Image
+                  src="/images/author-avatar.svg"
+                  width={50}
+                  height={50}
+                  alt="Sarah Johnson"
+                  className="rounded-circle author-avatar"
+                />
+                <div className="author-info">
+                  <h4 className="mb-0">Sarah Johnson</h4>
+                  <p className="mb-0">Product Owner</p>
+                </div>
+              </div>
                 </div>
               </Col>
               <Col xl={5}>
