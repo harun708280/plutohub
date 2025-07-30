@@ -1552,7 +1552,7 @@ ul.slick-dots li {
 
 section.testimonials-area {
     position: relative;
-    z-index: 100;
+    z-index: 1;
 
 }
 
@@ -1563,7 +1563,7 @@ section.testimonials-area {
 
 .testimonial-shape {
   position: absolute;
-  left: 35%;
+  left: 40%;
   top: 9%;
   z-index: -20;
   pointer-events: none;
@@ -1575,7 +1575,10 @@ section.testimonials-area {
 }
 
 
-
+.custom-slider {
+ 
+  margin-right: 0 !important;  
+}
 
 .single-testimonial-item {
   background: url('../../public/images/testimonial-bg.png') no-repeat center
@@ -1583,10 +1586,26 @@ section.testimonials-area {
   background-size: 100% 100%;
   padding: 24px;
   color: #fff;
+  height: 420px;
+  width: 485px !important;
+}
+.single-testimonial-item3 {
+  background: url('../../public/images/testimonial-bg.png') no-repeat center
+    center;
+  background-size: 100% 100%;
+  padding: 24px;
+  color: #fff;
+  height: 420px;
+   width: 800px !important;
 }
 
 
 
+
+.no-margin-right {
+
+  margin-right: 0 !important;
+}
 
 
 .single-testimonial-item .quote-image {
@@ -1722,6 +1741,8 @@ section.testimonials-area {
     padding-bottom: 25px;
 }
 
+
+
 /* Tablet */
 @media (max-width: 991px) {
   .testimonial-shape {
@@ -1729,6 +1750,20 @@ section.testimonials-area {
     top: 20px;
     transform: translateX(-50%) !important;
     max-width: 250px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .single-testimonial-item {
+    width: 400px;
+    height: 380px;
+    padding: 20px;
+  }
+
+  .single-testimonial-item3 {
+    width: 600px;
+    height: 400px;
+    padding: 20px;
   }
 }
 
@@ -1740,6 +1775,21 @@ section.testimonials-area {
   }
 }
 
+@media (max-width: 767px) {
+  .single-testimonial-item {
+    width: 300px !important;
+    height: auto;
+    padding: 16px;
+    background-size: cover;
+  }
+
+  .single-testimonial-item3 {
+    width: 300px !important;
+    height: auto;
+    padding: 16px;
+    background-size: cover;
+  }
+}
 
 @media (max-width: 1200px) {
   .price_inner .tab_content .p_footer {
@@ -1949,7 +1999,7 @@ section.contact-section {
 
 img.contact-shape {
     position: absolute;
-    left: 16%;
+    left: 17%;
     bottom: 9%;
 }
 
