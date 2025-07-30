@@ -153,193 +153,188 @@ const TestimonialsSection = () => {
         </Row>
       </Container>
       <Container className="custom-border no-margin-right">
-        
-           
-              <Slider {...sliderSettings} ref={sliderRef}>
-                {/* Slide 1 */}
-                <div>
-                  <div
-                    className="single-testimonial-item p-4 text-white rounded"
-                    style={{
-                      backgroundImage: "url(/images/testimonial-bg.png)",
-                      backgroundSize: "100% 100%",
-                      backgroundRepeat: "no-repeat",
-                    }}
-                  >
+        <Slider {...sliderSettings} ref={sliderRef}>
+          {/* Slide 1 */}
+          <div>
+            <div
+              className="single-testimonial-item p-4 text-white rounded"
+              style={{
+                backgroundImage: "url(/images/testimonial-bg.png)",
+                backgroundSize: "100% 100%",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <Image
+                src="/images/quote-left.svg"
+                width={35}
+                height={35}
+                alt="quote"
+                className="mb-3"
+              />
+              <p className="message">
+                “We are pleased with the quality and comprehensiveness of the
+                outcomes, as well as the ongoing support. The team recognized
+                the limitations of mobile and web app development, avoiding
+                overly flashy designs that complicate front-end coding.”
+              </p>
+              <div className="author-meta d-flex align-items-center gap-3 mt-4">
+                <Image
+                  src="/images/author-avatar.svg"
+                  width={50}
+                  height={50}
+                  alt="Khaled Belkadi"
+                  className="rounded-circle"
+                />
+                <div className="author-info">
+                  <h4 className="mb-0">Khaled Belkadi</h4>
+                  <p className="mb-0">Project Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Slide 2 */}
+
+          <div>
+            <div
+              className="single-testimonial-item position-relative p-4 text-white rounded d-flex justify-content-center align-items-center"
+              style={{
+                backgroundImage: "url(/testi1.png)",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "top",
+                minHeight: "300px",
+                clipPath: "polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 0)",
+              }}
+            >
+              <div
+                className="play-button d-flex justify-content-center align-items-center"
+                style={{
+                  width: "64px",
+                  height: "64px",
+                  backgroundColor: "rgba(255,255,255,0.2)",
+                  borderRadius: "50%",
+                  cursor: "pointer",
+                  zIndex: 2,
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="white"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+
+              {/* Author Info Fixed at Bottom */}
+              <div
+                className="author-meta position-absolute"
+                style={{
+                  bottom: "24px",
+                  left: "24px",
+                  right: "24px",
+                }}
+              >
+                <Image
+                  src="/images/author-avatar.svg"
+                  width={50}
+                  height={50}
+                  alt="Sarah Johnson"
+                  className="rounded-circle author-avatar"
+                />
+                <div className="author-info">
+                  <h4 className="mb-0">Sarah Johnson</h4>
+                  <p className="mb-0">Product Owner</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Slide 3 */}
+
+          <div
+            className="single-testimonial-item3 position-relative"
+            style={{
+              backgroundImage: "url(/images/testimonial-bg.png)",
+              backgroundSize: "100% 100%",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <Row>
+              <Col xl={7}>
+                <div className=''>
+                  <Image
+                    src="/images/quote-left.svg"
+                    width={35}
+                    height={35}
+                    alt="quote"
+                    className="mb-3"
+                  />
+                  <p className="message">
+                    “We are pleased with the quality and comprehensiveness of
+                    the outcomes, as well as the ongoing support. The team
+                    recognized the limitations of mobile and web app
+                    development, avoiding overly flashy designs that complicate
+                    front-end coding.”
+                  </p>
+                  <div className="author-meta ">
                     <Image
-                      src="/images/quote-left.svg"
-                      width={35}
-                      height={35}
-                      alt="quote"
-                      className="mb-3"
+                      src="/images/author-avatar.svg"
+                      width={50}
+                      height={50}
+                      alt="Sarah Johnson"
+                      className="rounded-circle"
                     />
-                    <p className="message">
-                      “We are pleased with the quality and comprehensiveness of
-                      the outcomes, as well as the ongoing support. The team
-                      recognized the limitations of mobile and web app
-                      development, avoiding overly flashy designs that
-                      complicate front-end coding.”
-                    </p>
-                    <div className="author-meta d-flex align-items-center gap-3 mt-4">
-                      <Image
-                        src="/images/author-avatar.svg"
-                        width={50}
-                        height={50}
-                        alt="Khaled Belkadi"
-                        className="rounded-circle"
-                      />
-                      <div className="author-info">
-                        <h4 className="mb-0">Khaled Belkadi</h4>
-                        <p className="mb-0">Project Manager</p>
-                      </div>
+                    <div className="author-info">
+                      <h4 className="mb-0">Sarah Johnson</h4>
+                      <p className="mb-0">Product Owner</p>
                     </div>
                   </div>
                 </div>
-
-                {/* Slide 2 */}
-
-                <div>
-                  <div
-                    className="single-testimonial-item position-relative p-4 text-white rounded d-flex justify-content-center align-items-center"
-                    style={{
-                      backgroundImage: "url(/testi1.png)",
-                      backgroundSize: "100% 100%",
-                      backgroundRepeat: "no-repeat",
-                      minHeight: "300px",
-                    }}
-                  >
-                    {/* Centered Play Button */}
-                    <div
-                      className="play-button d-flex justify-content-center align-items-center"
-                      style={{
-                        width: "64px",
-                        height: "64px",
-                        backgroundColor: "rgba(255,255,255,0.2)",
-                        borderRadius: "50%",
-                        cursor: "pointer",
-                        zIndex: 2,
-                      }}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="28"
-                        height="28"
-                        fill="white"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-
-                    {/* Author Info Fixed at Bottom */}
-                    <div
-                      className="author-meta position-absolute"
-                      style={{
-                        bottom: "24px",
-                        left: "24px",
-                        right: "24px",
-                      }}
-                    >
-                      <Image
-                        src="/images/author-avatar.svg"
-                        width={50}
-                        height={50}
-                        alt="Sarah Johnson"
-                        className="rounded-circle author-avatar"
-                      />
-                      <div className="author-info">
-                        <h4 className="mb-0">Sarah Johnson</h4>
-                        <p className="mb-0">Product Owner</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Slide 3 */}
-
+              </Col>
+              <Col xl={5}>
                 <div
-                  className="single-testimonial-item3 "
+                  className="position-relative p-4 mt-4 text-white rounded d-flex justify-content-center align-items-center"
                   style={{
-                    backgroundImage: "url(/images/testimonial-bg.png)",
-                    backgroundSize: "100% 100%",
+                    backgroundImage: "url(/testi2.png)",
+                    backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
+                    minHeight: "300px",
+                    height: "100%",
+                    width: "100%",
+                    maxWidth: "300px",
+                    clipPath: "polygon(100% 0, 100% 83%, 83% 100%, 0 100%, 0 0)",
                   }}
                 >
-                  <Row>
-                    <Col xl={7}>
-                      <div>
-                        <Image
-                          src="/images/quote-left.svg"
-                          width={35}
-                          height={35}
-                          alt="quote"
-                          className="mb-3"
-                        />
-                        <p className="message">
-                          “We are pleased with the quality and comprehensiveness
-                          of the outcomes, as well as the ongoing support. The
-                          team recognized the limitations of mobile and web app
-                          development, avoiding overly flashy designs that
-                          complicate front-end coding.”
-                        </p>
-                        <div className="author-meta ">
-                          <Image
-                            src="/images/author-avatar.svg"
-                            width={50}
-                            height={50}
-                            alt="Sarah Johnson"
-                            className="rounded-circle"
-                          />
-                          <div className="author-info">
-                            <h4 className="mb-0">Sarah Johnson</h4>
-                            <p className="mb-0">Product Owner</p>
-                          </div>
-                        </div>
-                      </div>
-                    </Col>
-                    <Col xl={5}>
-                      <div
-                        className="position-relative p-4 mt-4 text-white rounded d-flex justify-content-center align-items-center"
-                        style={{
-                          backgroundImage: "url(/testi2.png)",
-                          backgroundSize: "cover",
-                          backgroundRepeat: "no-repeat",
-                          minHeight: "300px",
-                          height: "100%",
-                          width: "100%",
-                          maxWidth: "300px",
-                        }}
-                      >
-                        <div
-                          className="play-button d-flex justify-content-center align-items-center"
-                          style={{
-                            width: "64px",
-                            height: "64px",
-                            backgroundColor: "rgba(255,255,255,0.2)",
-                            borderRadius: "50%",
-                            cursor: "pointer",
-                            zIndex: 2,
-                          }}
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="28"
-                            height="28"
-                            fill="white"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M8 5v14l11-7z" />
-                          </svg>
-                        </div>
-
-                        
-                      </div>
-                    </Col>
-                  </Row>
+                  <div
+                    className="play-button d-flex justify-content-center align-items-center"
+                    style={{
+                      width: "64px",
+                      height: "64px",
+                      backgroundColor: "rgba(255,255,255,0.2)",
+                      borderRadius: "50%",
+                      cursor: "pointer",
+                      zIndex: 2,
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      fill="white"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
                 </div>
-              </Slider>
-           
-         
+              </Col>
+            </Row>
+          </div>
+        </Slider>
       </Container>
       <Container>
         <Row className="text-center">
